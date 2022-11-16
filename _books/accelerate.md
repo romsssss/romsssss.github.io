@@ -1,4 +1,5 @@
 ---
+layout: book
 title: Accelerate
 author: "Nicole Forsgren, Jez Humble, Gene Kim"
 ---

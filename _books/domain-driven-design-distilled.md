@@ -1,4 +1,5 @@
 ---
+layout: book
 title: "Domain-Driven Design Distilled"
 author: "Vaughn Vernon"
 ---
