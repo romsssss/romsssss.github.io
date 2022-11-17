@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "La code review: un exercice plus difficile qu’il n’y parait"
-category: "team collaboration"
-tags: github "pull request"
+category: ["team collaboration"]
+tags: [github, "pull request"]
 ---
 
 
 Il y a quelques jours, en faisant le ménage de printemps dans ma bibliothèque virtuelle qu’est Dropbox, je suis retombé un peu par hasard sur la première présentation que j’avais fait en arrivant chez LiveMentor il y a maintenant trois ans.
-
+<!--more-->
 À l’époque, l’équipe, fraîchement composée, accueillait beaucoup de membres juniors ou stagiaires. J’avais été impressionné par l’intégration continue qui était en place et la vélocité avec laquelle les nouvelles fonctionnalités étaient mises en ligne.
 
 Il n’y avait, par contre, pas de code reviews systématiques avant les déploiements. Beaucoup de petits projets partaient directement en production, et lorsqu’il y avait des reviews, elles étaient souvent mono-directionnelles (une développeur plus expérimenté qui review un développeur plus junior). Cela entraînait une vague de bugfix après chaque déploiement.
@@ -63,34 +63,18 @@ Lorsque nous avons de la QA (Quality Assurance) fonctionnelle à faire sur des i
 
 Le membre de l’équipe qui se charge de faire la QA n’a alors plus qu’à récupérer chaque lien pour facilement se connecter sur un compte élève et tester chaque scénario.
 
-<br /><br />
+---
 
 Pour harmoniser les descriptions de pull request, Github permet l’édition d’un template.
 
 Voici celui que nous utilisons actuellement:
 
-{% highlight markdown %}
-# Context
-*A few lines to introduce the origin of the PR. Including links to relevant Github Issues or other PRs*
-
-# Goal
-*One line description of the goal of the PR*
-
-# Work
-*List of main changes in the codebase and explanation of implementation choices*
-
-# How to test / results
-*Instructions for reviewers on how to test the changes and/or benchmarking results*
-*Including [GIF](https://itunes.apple.com/fr/app/giphy-capture.-the-gif-maker/id668208984?mt=12) and staging app links if relevant*
-
-# Notes
-*Any further notes or instructions to ease the review process*
-{% endhighlight %}
+{% gist 87f7677c187e8e6112b9954667648106 %}
 
 Quelques exemples d’utilisation du template :
 
-![Pull Request Template example 1](/assets/img/2019-06-07-code-review-harder-than-it-looks/pr_template_example_1.png)
-![Pull Request Template example 2](/assets/img/2019-06-07-code-review-harder-than-it-looks/pr_template_example_2.png)
+[![Pull Request Template example 1](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_1.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_1.png){:.glightbox}
+[![Pull Request Template example 2](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_2.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_2.png){:.glightbox}
 
 Chaque projet utilise un template différent. Il est toujours intéressant d’aller fouiner sur certains projets open source pour trouver de l’inspiration.
 Rien qu’en regardant des projets comme [VueJS](vuejs_pr_template), [Atom](atom_pr_template), [ESLint](eslint_pr_template) ou encore [Webpack](webpack_pr_template), on se rend compte de ce qui importe pour chaque équipe.
@@ -111,7 +95,7 @@ Lors d’une review de PR, le niveau d’attention va naturellement diminuer apr
 
 Même sur de gros projets, il est souvent facile de faire un découpage en multiples pull requests indépendantes
 
-![Big vs Small PRs](/assets/img/2019-06-07-code-review-harder-than-it-looks/pr_big_vs_small.png)
+[![Big vs Small PRs](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_big_vs_small.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_big_vs_small.png){:.glightbox}
 _Pour un reviewer, la deuxième PR est plus attrayante que la première_
 
 ### Le premier reviewer de chaque PR devrait être son créateur.
@@ -126,7 +110,7 @@ Autant de travail en moins pour le reviewer et de crédibilité en plus pour l�
 
 Il est normal lors d’un développement de faire beaucoup d’itérations, de tâtonner, de faire marche arrière. On se retrouve alors souvent avec un historique de commits qui ressemble à cela.
 
-![Commits History Mess](/assets/img/2019-06-07-code-review-harder-than-it-looks/commits_history_mess.png)
+[![Commits History Mess](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/commits_history_mess.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/commits_history_mess.png){:.glightbox}
 
 Avant d’ouvrir une pull request il est judicieux de prendre le temps de repasser sur l’historique de commits en en déplaçant, en fusionnant et en réécrivant les messages de commits grace au [rebase interactif](interactive_rebase) de GIT.
 
@@ -140,7 +124,7 @@ C’est néanmoins à éviter car cela introduit beaucoup de bruit pour la perso
 
 Idéalement il faudrait ouvrir une première PR dédiée juste au formatage du code. Ou alors centraliser tout le formatage dans un commit et faciliter la review commit par commit.
 
-![Linting in PR diff](/assets/img/2019-06-07-code-review-harder-than-it-looks/linting_in_pr_diff.png)
+[![Linting in PR diff](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/linting_in_pr_diff.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/linting_in_pr_diff.png){:.glightbox}
 _Difficile de repérer les changements au milieu de tout se formatage…_
 
 ## Pourquoi se donner tant de mal ?
@@ -281,7 +265,7 @@ Lorsqu’elles dépassent le scope initial de la PR, une bonne pratique est d’
 
 Sinon, comment le reviewer va t-il savoir si l’auteur de la PR a bien lu son retour ou si il l’ignore juste ?
 
-![Github emoji reaction](/assets/img/2019-06-07-code-review-harder-than-it-looks/github_emojis_reaction.png)
+[![Github emoji reaction](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/github_emojis_reaction.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/github_emojis_reaction.png){:.glightbox}
 _Github permet également de répondre rapidement avec des emojis_
 
 ### Passer offline au besoin
@@ -290,14 +274,9 @@ Lorsqu’une discussion dure, que plusieurs messages ont été échangés sur un
 
 En prenant ensuite soin de résumer le résultat de la discussion directement dans la PR.
 
-
 Donner du feedback n’est pas quelque chose d’inné. Mais avec un peu d’entraînement et de bonnes pratiques cela devient un réflexe.
 
-<br/><br/>
-
 ---
-<br/><br/>
-
 ## Sources
 [https://github.com/blog/1943-how-to-write-the-perfect-pull-request](https://github.com/blog/1943-how-to-write-the-perfect-pull-request)
 

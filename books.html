@@ -2,14 +2,14 @@
 layout: default
 title: Books
 ---
-<h1>Books</h1>
 
-<ul>
+<div>
   {% for book in site.books %}
-    <li>
+    <div>
       <h2><a href="{{ book.url }}">{{ book.title }}</a></h2>
       <h3>{{ book.author }}</h3>
-      <p>{{ book.content | markdownify }}</p>
-    </li>
+      <p><img src="/assets/image/books/{{book.cover_image}}" alt="{{book.title}} book cover" style="width: 120px"/></p>
+      <p>{{ book.description | markdownify }}</p>
+    </div>
   {% endfor %}
-</ul>
+</div>

@@ -2,6 +2,8 @@
 layout: book
 title: Accelerate
 author: "Nicole Forsgren, Jez Humble, Gene Kim"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus finibus quam eu iaculis. In mattis, sem ac egestas maximus, tellus turpis convallis ante, a dignissim libero erat in ligula."
+cover_image: accelerate.jpeg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus finibus quam eu iaculis. In mattis, sem ac egestas maximus, tellus turpis convallis ante, a dignissim libero erat in ligula. Suspendisse tempor lacus metus, venenatis dictum elit varius non. Nullam ac eleifend leo. Aliquam sapien velit, feugiat ac est sed, ultrices tincidunt ex. Suspendisse eget faucibus dolor. Duis sed interdum odio.
