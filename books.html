@@ -3,13 +3,27 @@ layout: default
 title: Books
 ---
 
-<div>
+<div class="page-introduction">
+  <p>
+    <em>→ Short book reviews on some of my readings on software engineering, leadership, technology and organisations.</em>
+  </p>
+</div>
+
+<div class="books">
   {% for book in site.books %}
-    <div>
-      <h2><a href="{{ book.url }}">{{ book.title }}</a></h2>
-      <h3>{{ book.author }}</h3>
-      <p><img src="/assets/image/books/{{book.cover_image}}" alt="{{book.title}} book cover" style="width: 120px"/></p>
-      <p>{{ book.description | markdownify }}</p>
+    <div class="book">
+      <h2 class="book-title"><a href="{{ book.url }}">{{ book.title }}</a></h2>
+      <div class="book-content">
+        <div class="book-cover">
+            <a href="{{ book.url }}">
+              <img src="/assets/image/books/{{book.cover_image}}" alt="{{book.title}} book cover" style="width: 120px"/>
+            </a>
+        </div>
+        <div>
+          <h3 class="book-author">{{ book.author }}</h3>
+          <p class="book-description">{{ book.description | markdownify }}</p>
+        </div>
+      </div>
     </div>
   {% endfor %}
 </div>
