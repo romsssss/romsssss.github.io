@@ -73,8 +73,9 @@ Voici celui que nous utilisons actuellement:
 
 Quelques exemples d’utilisation du template :
 
-[![Pull Request Template example 1](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_1.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_1.png){:.glightbox}
-[![Pull Request Template example 2](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_2.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_2.png){:.glightbox}
+{% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_1.png" alt="Pull Request Template example 1" %}
+
+{% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_2.png" alt="Pull Request Template example 2" %}
 
 Chaque projet utilise un template différent. Il est toujours intéressant d’aller fouiner sur certains projets open source pour trouver de l’inspiration.
 Rien qu’en regardant des projets comme [VueJS](vuejs_pr_template), [Atom](atom_pr_template), [ESLint](eslint_pr_template) ou encore [Webpack](webpack_pr_template), on se rend compte de ce qui importe pour chaque équipe.
@@ -95,9 +96,7 @@ Lors d’une review de PR, le niveau d’attention va naturellement diminuer apr
 
 Même sur de gros projets, il est souvent facile de faire un découpage en multiples pull requests indépendantes
 
-[![Big vs Small PRs](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_big_vs_small.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_big_vs_small.png){:.glightbox}
-_Pour un reviewer, la deuxième PR est plus attrayante que la première_
-
+{% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_big_vs_small.png" caption="Pour un reviewer, la deuxième PR est plus attrayante que la première" %}
 ### Le premier reviewer de chaque PR devrait être son créateur.
 
 Avant d’envoyer un email important nous prenons tous le temps de le relire, vérifier qu’il n’y a pas de faute d’orthographe et que toutes les informations que l’on voulait communiquer sont présentes.
@@ -110,7 +109,7 @@ Autant de travail en moins pour le reviewer et de crédibilité en plus pour l�
 
 Il est normal lors d’un développement de faire beaucoup d’itérations, de tâtonner, de faire marche arrière. On se retrouve alors souvent avec un historique de commits qui ressemble à cela.
 
-[![Commits History Mess](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/commits_history_mess.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/commits_history_mess.png){:.glightbox}
+{% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/commits_history_mess.png" alt="Commit History Mess" %}
 
 Avant d’ouvrir une pull request il est judicieux de prendre le temps de repasser sur l’historique de commits en en déplaçant, en fusionnant et en réécrivant les messages de commits grace au [rebase interactif](interactive_rebase) de GIT.
 
@@ -124,9 +123,7 @@ C’est néanmoins à éviter car cela introduit beaucoup de bruit pour la perso
 
 Idéalement il faudrait ouvrir une première PR dédiée juste au formatage du code. Ou alors centraliser tout le formatage dans un commit et faciliter la review commit par commit.
 
-[![Linting in PR diff](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/linting_in_pr_diff.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/linting_in_pr_diff.png){:.glightbox}
-_Difficile de repérer les changements au milieu de tout se formatage…_
-
+{% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/linting_in_pr_diff.png" alt="Linting in PR diff" caption="Difficile de repérer les changements au milieu de tout se formatage…" %}
 ## Pourquoi se donner tant de mal ?
 
 L’enjeux crucial derrière tout cela c’est de réduire le temps moyen entre l’ouverture et la clôture d’une pull request. Cela permet d’augmenter la qualité moyenne d’une codebase sans perdre en vélocité.
@@ -265,8 +262,7 @@ Lorsqu’elles dépassent le scope initial de la PR, une bonne pratique est d’
 
 Sinon, comment le reviewer va t-il savoir si l’auteur de la PR a bien lu son retour ou si il l’ignore juste ?
 
-[![Github emoji reaction](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/github_emojis_reaction.png)](/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/github_emojis_reaction.png){:.glightbox}
-_Github permet également de répondre rapidement avec des emojis_
+{% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/github_emojis_reaction.png" alt="Github emoji reaction" caption="Github permet également de répondre rapidement avec des emojis" %}
 
 ### Passer offline au besoin
 
