@@ -1,7 +1,22 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<h2>{{ page.author }}</h2>
 
-{{ content }}
+<div class="books">
+  <div class="book">
+    <h1 class="book-title">{{ page.title }}</h1>
+
+    <div class="book-content">
+      <div class="book-cover">
+        <img src="/assets/image/books/{{page.cover_image}}" alt="{{page.title}} book cover" style="width: 120px"/>
+      </div>
+      <div>
+        <h3 class="book-author">{{ page.author }}</h3>
+        <p class="book-description">{{ page.description | markdownify }}</p>
+      </div>
+    </div>
+    <hr />
+
+    {{ content }}
+  </div>
+</div>
