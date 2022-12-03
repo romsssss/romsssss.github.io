@@ -59,6 +59,15 @@ timezone: Europe/Paris
 # Excerpt separator
 excerpt_separator: <!--more-->
 
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      category: blog
+      layout: post
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #

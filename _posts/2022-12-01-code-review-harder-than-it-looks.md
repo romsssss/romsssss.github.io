@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "A good code review is harder than it looks"
 tags: [GitHub, "pull request"]
 ---
