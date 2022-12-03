@@ -2,7 +2,7 @@
 layout: book
 title: "Domain-Driven Design Distilled"
 author: "Vaughn Vernon"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus finibus quam eu iaculis. In mattis, sem ac egestas maximus, tellus turpis convallis ante, a dignissim libero erat in ligula."
+description: "A short but comprehensive resource about DDD. The perfect book to get started with this approach."
 cover_image: domain-driven-design-distilled.jpg
 ---
 

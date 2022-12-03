@@ -40,7 +40,7 @@ While this definition is just a subpart of the global lead time (from idea to pr
 
 Some subjects to tackle to reduce lead time:
 
-* Pull Request & Code Review best practices
+* [Pull Request & Code Review best practices]({% link _posts/2022-12-01-code-review-harder-than-it-looks.md %})
 * <abbr title="Continuous Integration">CI</abbr>/<abbr title="Continuous Delivery">CD</abbr> pipelines
 * <abbr title="Quality Assurance">QA</abbr> processes
 

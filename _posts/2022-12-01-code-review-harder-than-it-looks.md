@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "A good code review is harder than it looks"
-category: ["team collaboration"]
 tags: [GitHub, "pull request"]
 ---
 
