@@ -6,13 +6,9 @@ description: "An exhaustive introduction to lean principles and practices. An im
 cover_image: learning_to_scale.jpg
 ---
 
-## Intro
-
 Regis Medina was one of the early pioneers of Agile methodologies. He helped many French companies to adopt a lean strategy and build fast-growing, highly adaptive scale-ups.
 
 I came across his book while doing his 8-week-long program to become a "lean practitioner"
-
-## Sum up
 
 The lean strategy is sometimes portrayed by gurus as a philosophy or a religion. As if it was the absolute truth and the only way to go.
 
@@ -39,8 +35,6 @@ All of them are summed up in the following graph
 While so many new concepts can be overwhelming, the book paves the way to the lean journey.
 It gives a clear sequence on what and where to start with.
 Introducing one concept at a time. Nudging the reader to try it out in his/her team before jumping to the next concept.
-
-## Conclusion
 
 "Learning to Scale" is a good cookbook, it gives all recipes needed to learn the lean strategy.
 
