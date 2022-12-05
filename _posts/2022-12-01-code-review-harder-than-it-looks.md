@@ -6,7 +6,7 @@ tags: [GitHub, "pull request"]
 Opening easy to review pull requests, giving relevant feedback, or responding to feedback is hard.
 It requires a good mix of soft and hard skills, which are often overlooked.
 
-Like any activity, practice makes perfect, and I believe anyone can become better at it.
+Like any activity, practice makes perfect, and anyone can become better at it.
 <!--more-->
 
 In this blog post, I summarized all the best practices I learned along the years.
@@ -18,7 +18,7 @@ It is then tempting to open a new pull request, give it a title, immediately cli
 
 However, one crucial step is missing... filling in the description field of the pull request.
 
-It's an ideal place to explain the motivation behind introduced changes, depict implementation choices, and ease the process for the person who is going to review the code. Broadly used in open source software, where the reviewer does not necessarily personally know the reviewee, it is too often overlooked in the "Proprietary" world.
+It's an ideal place to explain the motivation behind introduced changes, depict implementation choices, and ease the process for the person who is going to review the code. Broadly used in open-source software, where the reviewer does not necessarily personally know the reviewee, it is too often overlooked in the "Proprietary" world.
 
 A comprehensive pull request description should, at least, contain the following information.
 
@@ -32,10 +32,9 @@ Could it be a user story, an issue escalated by the Support team, a refactor opp
 
 ### A single and unambiguous goal
 
-Si le but de la pull request ne peut être résumé en une courte phrase, c’est souvent un symptôme indiquant que la PR est trop grosse et introduit trop de changements. -->
-What are we achieving merging this pull request ?
+What are we achieving merging this pull request?
 
-When the pull request goal cannot be easily described in one short sentence, it is often a symptom signaling that the pull request is too big and introduces too many changes.
+When the pull request goal cannot be easily described in one short sentence, it is sometimes a symptom signaling that the pull request is too big and introduces too many changes.
 
 👉 _It's the “what ?” of the pull request_
 
@@ -45,7 +44,7 @@ Documenting implementation in a pull request description can only be beneficial.
 
 For instance, one can explain why design pattern X was used, how modules are bounded, why Y naming convention was chosen, or with which constraints was the code written.
 
-The reasoning behind the chosen implementation is really important.
+The reasoning behind the chosen implementation is essential.
 It will influence the reviewer mindset and give him/her all the intangible information needed to perform a relevant code review.
 
 👉 _It is the "how" of the pull request_
@@ -72,12 +71,12 @@ And some real life examples:
 
 {% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_2.png" alt="Pull Request Template example 2" %}
 
-Every project can use a different pull request template. I find it always interesting to browse around some open source project for inspiration.
+Every project can use a different pull request template. I find it always interesting to browse around some open-source project for inspiration.
 When looking at [VueJS][vuejs_pr_template], [Atom][atom_pr_template], [ESLint][eslint_pr_template] or [Webpack][webpack_pr_template] templates, we can quickly see what matters the most for each team.
 
 > When I write a pull request description, I keep in mind that the person who is going to do the review does not know anything about the changes I implemented. I do it even when I know it's not the case, it helps me take a step back.
 
-Also, it is so pleasing, when doing a `git blame` to come across a well documented pull request written a few months ago. One can effortlessly dig into it.
+It is also pleasing, when doing a `git blame`, to come across a well documented pull request written a few months ago. One can effortlessly dig into it.
 
 ## Pull request best practices
 
@@ -89,7 +88,7 @@ The bigger the pull request, the more complex the review process is.
 
 When reviewing a pull request, the attention level of a reviewer will inherently decrease after about ten minutes. Leading to bugs hitting production while they could have easily been discovered during the code review.
 
-Even on big projects or feature, it is often easy to break up changes in multiple small pull requests.
+Even on big projects or feature, it is often easy to break up changes in several smaller pull requests.
 
 {% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_big_vs_small.png" caption="For a reviewer, the second pull request is more appealing than the first one" %}
 
@@ -100,7 +99,7 @@ Before sending an important email, we all take the time to proofread it, chasing
 It is a good habit to so the same before hitting the create button for a new pull request. A quick scan over the git diff allows to easily spot mistakenly committed files, unadvisedly commented out lines of codes or typos.
 
 Reviewers can notice obvious hints giving away that the author didn't proofread his/her pull request.
-Could it be a local file being versioned by mistake, or a comment intended to be removed before the pull request (ex: "TODO: extract logic into private method").
+Could it be a local file versioned unintentionally, or a comment intended to be removed before the pull request (ex: "To-do: extract logic into private method").
 
 Not the best way to start a review, and so much credibility lost for the author of the PR.
 
@@ -120,7 +119,7 @@ While working on a feature, and opening an old file, it is always tempting to co
 
 It is however counterproductive as it will introduce a lot of noise for the reviewer.
 
-Ideally, we should open a first pull request dedicated to code linting. Or at least, do all the code linting in a single commit and facilitate the review commit by commit.
+Ideally, we should open a first pull request dedicated to code linting. Or at least, do all the code linting in a single commit and ease the review commit by commit.
 
 {% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/linting_in_pr_diff.png" alt="Linting in PR diff" caption="It is hard to spot the actual changes among all the code linting" %}
 
@@ -136,7 +135,7 @@ We can break down the lead time in the following way:
 
 The idea is to make the life of the person who is going to review the pull request easier. It will impact the actual review time, but also the delay between pull requests openings and beginning of code reviews. As a reviewer, if I foresee that a review won't be too much time-consuming, I'll tend to prioritize it.
 
-## By the way, how can we give good feedback while reviewing code ?
+## By the way, how can we give good feedback while reviewing code?
 
 Now that we have seen some tips on how to write a good pull request, the reviewer may come into play.
 
@@ -147,23 +146,21 @@ Here are some best practices to keep in mind while reviewing code.
 
 Asking open-ended questions nudge to open discussions instead of creating frustration.
 
-> J’ai remarqué que les logiques entre X et Y sont très proches. Est ce que tu penses qu’il y a moyen de factoriser le code ? -->
+For instance, if during a code review, I spot that some logic was duplicated. I won't write
 
-For instance, if during a code review, I spot that some logic has been duplicated. I won't write
+> Code duplication!
 
-> Code duplication !
+...but instead
 
-but instead
-
-> I noticed that the logic between X and Y is fairly similar. Do you think there is an opportunity for code factorization here ?
+> I noticed that the logic between X and Y is fairly similar. Do you think there is an opportunity for code factorization here?
 
 ### Ask for clarifications
 
-As a reviewer I am not omniscient, I often ask for clarifications while reviewing code. It can be a sign that the code is not explicit enough, or I just might have missed something important.
+As a reviewer I am not omniscient, I often ask for clarifications while reviewing code. It can be a sign that the code is not explicit enough, or I might have missed something important.
 
-> I'm not sure to fully understand this validation. Does it ensure two students cannot ask two questions at once ?
+> I'm not sure to fully understand this validation. Does it ensure two students cannot ask two questions at once?
 
-> What is this method doing ? Based on the name I'd think it does X but when I look at the code it looks like it does Y
+> What is this method doing? Based on the name I'd think it does X but when I look at the code it looks like it does Y.
 
 ### Cognitive bias can affect your writing
 
@@ -171,9 +168,9 @@ Without voice intonations or facial expressions, it is harder to convey an inten
 
 A neutral question such as:
 
-> Did you take the time to test this method before opening this pull request ?
+> Did you take the time to test this method before opening this pull request?
 
-...will be perceived negatively when being read.
+...will be perceived negatively when read.
 
 Similarly, sarcasm is very hard to spot when written.
 
@@ -203,9 +200,9 @@ Taking a step back could also let the reviewer discover new paths. The review is
 
 ### It's tool late to challenge architectural or design choices
 
-> Why don't we create the concept of "credit" in our codebase to deal with discounts ?
+> Why don't we create the concept of "credit" in our codebase to deal with discounts?
 
-> Should we use Redis instead of PostgreSQL for this feature ?
+> Should we use Redis instead of PostgreSQL for this feature?
 
 While valid points, this kind of questions, challenging the whole implementation strategy of a new feature during a code review, are often a symptom of poor technical specifications or lack of communication.
 
@@ -217,13 +214,13 @@ Code reviews feedback is not always negative. It is also a great way to give pos
 
 > ❤️ the way you handled the corner case for users with temporary passwords, very clever :)
 
-> I wasn't aware of the `zero?` method on number. So useful ! I'll start using it from now on.
+> I wasn't aware of the `zero?` method on number. So useful! I'll start using it from now on.
 
 ### Offer help
 
 When I give feedback that implies substantial or very specific rework, I like to offer my help to the pull request author to implement the changes.
 
-> I deeply feel that the Composite pattern would be a great fit for this implementation. What do you think about it ? Do you want to do some pair-programming together over it ?
+> I deeply feel that the Composite pattern would be a great fit for this implementation. What do you think about it? Do you want to do some pair-programming together over it?
 
 ### Don't bother with code styling
 
@@ -231,7 +228,7 @@ Code reviews are not the right place to open debate on code styling
 
 > I'd like us to use spaces instead of tabulations.
 
-> Why didn't you use CamelCase in your variables names ?
+> Why didn't you use CamelCase in your variables names?
 
 This kind of feedback do not add value to the code review. There are many statistical analysis tools available. Robots are excellent at this job.
 Best practice is to have a style guide already defined for and by the team.
@@ -256,13 +253,13 @@ I like to build a strong and healthy code review culture in teams I work with an
 
 ### Don't let your ego get in the way
 
-It is most likely the hardest part of a code review. Personally, it took me some time. when I first started coding professionally, to understand that code reviews are about code, not people.
+It is most likely the hardest part of a code review. Personally, it took me some time. When I started to code professionally, to understand that code reviews are about code, not people.
 
 After realizing it, it was easier to be in the right mindset to reply to feedbacks given on my pull requests. Not needing to be on the defensive and instead welcoming it as a way to improve my code.
 
 However, it doesn't mean that we have to accept 100% of a code review feedbacks. After all, we are all opinionated.
 
-### Don't let yourself being overwhelmed
+### Don't overwhelm yourself
 
 Quite often, good ideas are born during code reviews.
 
@@ -272,7 +269,7 @@ That way, it can be prioritized and addressed in a following pull request or at 
 
 ### Reply to all feedbacks
 
-If not, how will the reviewer know if the pull request author actually took into account its feedback ?
+If not, how will the reviewer know if the pull request author actually took into consideration its feedback?
 
 {% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/github_emojis_reaction.png" alt="GitHub emoji reaction" caption="GitHub allows using emojis to quickly respond to feedback" %}
 
