@@ -3,37 +3,35 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
-{% if page.excerpt %}
+{% if page.title %}
+  <title>{{ page.title }} – {{ site.title }} – {{ site.description }}</title>
+  <meta property="og:title" content="{{ page.title }} – {{ site.title }} – {{ site.description }}" />
+  <meta property="twitter:title" content="{{ page.title }} – {{ site.title }} – {{ site.description }}" />
+{% else %}
+  <title>{{ site.title }} – {{ site.description }}</title>
+{% endif %}
+
+{% if page.collection == 'books' %}
+<meta name="description" content="{{ page.description | strip_html }}" />
+<meta property="og:description" content="{{ page.description| strip_html }}" />
+<meta name="twitter:description" content="{{ page.description| strip_html }}">
+{% elsif page.excerpt %}
 <meta name="description" content="{{ page.excerpt | strip_html }}" />
+<meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+<meta name="twitter:description" content="{{ page.excerpt| strip_html }}">
 {% else %}
 <meta name="description" content="{{ site.name }} - {{ site.description }}">
+<meta property="og:description" content="{{ site.name }} - {{ site.description }}" />
+<meta name="twitter:description" content="{{ site.name }} - {{ site.description }}">
 {% endif %}
+
 <meta name="author" content="{{ site.name }}" />
 <meta url="{{site.url}}{{page.url}}">
 
-<!-- Facebook Meta Tags -->
 <meta property="og:url" content="{{site.url}}{{page.url}}">
 <meta property="og:type" content="website">
-{% if page.title %}
-<meta property="og:title" content="{{ page.title }}" />
-{% endif %}
-<meta property="og:image" content="{{ site.avatar }}">
-{% if page.excerpt %}
-<meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-{% else %}
-<meta property="og:description" content="{{ site.name }} - {{ site.description }}" />
-{% endif %}
+<meta property="og:image" content="{{ site.avatar_big }}">
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{site.url}}{{page.url}}">
-{% if page.title %}
-<meta property="twitter:title" content="{{ page.title }}" />
-{% endif %}
-<meta name="twitter:image" content="{{ site.avatar }}">
-{% if page.excerpt %}
-<meta name="twitter:description" content="{{ page.excerpt| strip_html }}">
-{% else %}
-<meta property="twitter:description" content="{{ site.name }} - {{ site.description }}" />
-{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.avatar_big }}">
