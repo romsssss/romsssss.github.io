@@ -6,10 +6,7 @@ description: "How to measure the performance of an engineering team, and what ca
 cover_image: accelerate.jpeg
 ---
 
-This book has been recommended to me when I was focusing on improving the quality of software shipped in an already swift team.
-<!-- While there are no groundbreaking findings, I really liked the
-haha momewnt -> come with a plan -->
-
+This book has been recommended to me when I was focusing on improving the quality of software shipped in an already swift.
 ## 4 metrics for software delivery performance
 
 While there are many topics covered by the book, I keep coming back regularly to a single chapter: the one about measuring software delivery performance.
@@ -107,6 +104,5 @@ It also addresses topics such as Continuous Integration, loosely coupled archite
 
 Lastly, there is a whole section dedicated to the research process (based on surveys) and the statistical analysis made to come up with the insight presented in the book.
 It goes into great details and gives strong legibility to the insights discovered. It is not too often we see it in opinionated software engineering books.
-
 
 Long story short: Accelerate is a great resource for anyone interested in measuring and improving the performance of an engineering team. A must-read !
