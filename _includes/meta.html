@@ -9,6 +9,8 @@
   <meta property="twitter:title" content="{{ page.title }} – {{ site.title }} – {{ site.description }}" />
 {% else %}
   <title>{{ site.title }} – {{ site.description }}</title>
+  <meta property="og:title" content="{{ site.title }} – {{ site.description }}" />
+  <meta property="twitter:title" content="{{ site.title }} – {{ site.description }}" />
 {% endif %}
 
 {% if page.collection == 'books' %}
