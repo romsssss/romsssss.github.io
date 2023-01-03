@@ -4,13 +4,13 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
 {% if page.title %}
-  <title>{{ page.title }} – {{ site.title }} – {{ site.description }}</title>
-  <meta property="og:title" content="{{ page.title }} – {{ site.title }} – {{ site.description }}" />
-  <meta property="twitter:title" content="{{ page.title }} – {{ site.title }} – {{ site.description }}" />
+  <title>{{ page.title }} – {{ site.name }} – {{ site.description }}</title>
+  <meta property="og:title" content="{{ page.title }} – {{ site.name }} – {{ site.description }}" />
+  <meta property="twitter:title" content="{{ page.title }} – {{ site.name }} – {{ site.description }}" />
 {% else %}
-  <title>{{ site.title }} – {{ site.description }}</title>
-  <meta property="og:title" content="{{ site.title }} – {{ site.description }}" />
-  <meta property="twitter:title" content="{{ site.title }} – {{ site.description }}" />
+  <title>{{ site.name }} – {{ site.description }}</title>
+  <meta property="og:title" content="{{ site.name }} – {{ site.description }}" />
+  <meta property="twitter:title" content="{{ site.name }} – {{ site.description }}" />
 {% endif %}
 
 {% if page.collection == 'books' %}
