@@ -3,13 +3,13 @@ title: "A good code review is harder than it looks"
 tags: [GitHub, "pull request"]
 ---
 
-Opening easy to review pull requests, giving relevant feedback, or responding to feedback is hard.
+Opening easily to review pull requests, giving relevant feedback, or responding to feedback is hard.
 It requires a good mix of soft and hard skills, which are often overlooked.
 
 Like any activity, practice makes perfect, and anyone can become better at it.
 <!--more-->
 
-In this blog post, I summarized all the best practices I learned along the years.
+In this blog post, I summarized all the best practices I learned over the years.
 ## One does not open a pull request in one click!
 
 It is an everyday situation to many developers: after a long and draining coding session during which hundreds of lines of codes have been written, all the static analysis tool lights are green and the feature you've been working on for the past few days is finally ready.
@@ -20,7 +20,7 @@ However, one crucial step is missing... filling in the description field of the 
 
 It's an ideal place to explain the motivation behind introduced changes, depict implementation choices, and ease the process for the person who is going to review the code. Broadly used in open-source software, where the reviewer does not necessarily personally know the reviewee, it is too often overlooked in the "Proprietary" world.
 
-A comprehensive pull request description should, at least, contain the following information.
+A comprehensive pull request description should, at the very least, contain the following information.
 
 ### Context, context and more context!
 
@@ -34,7 +34,7 @@ Could it be a user story, an issue escalated by the Support team, a refactor opp
 
 What are we achieving merging this pull request?
 
-When the pull request goal cannot be easily described in one short sentence, it is sometimes a symptom signaling that the pull request is too big and introduces too many changes.
+When the pull request goal cannot be easily described in one short sentence, it is sometimes a sign that the pull request is too big and introduces too many changes.
 
 👉 _It's the “what ?” of the pull request_
 
@@ -42,16 +42,16 @@ When the pull request goal cannot be easily described in one short sentence, it 
 
 Documenting implementation in a pull request description can only be beneficial.
 
-For instance, one can explain why design pattern X was used, how modules are bounded, why Y naming convention was chosen, or with which constraints was the code written.
+For instance, one can explain why design pattern X was used, how modules are bounded, why Y naming convention was chosen, or with which constraints the code was written.
 
 The reasoning behind the chosen implementation is essential.
-It will influence the reviewer mindset and give him/her all the intangible information needed to perform a relevant code review.
+It will influence the reviewer's mindset and give him/her all the intangible information needed to perform a relevant code review.
 
 👉 _It is the "how" of the pull request_
 
 ### We want results!
 
-When applicable, giving pointers on how to test or visualize the introduced changes will greatly ease the review process.
+If possible, giving pointers on how to test or visualize the introduced changes will greatly ease the review process.
 
 With web development, many changes are visual.
 If the setup allows it, sharing a link to a staging or review app to let the reviewer test the changes himself/herself is a must.
