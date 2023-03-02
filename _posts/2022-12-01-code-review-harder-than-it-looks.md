@@ -22,7 +22,7 @@ It's an ideal place to explain the motivation behind introduced changes, depict 
 
 A comprehensive pull request description should, at the very least, contain the following information.
 
-### Context, context and more context!
+### 1. Context, context and more context!
 
 The best way to start a pull request description is to explain what triggered the need for changes.
 
@@ -30,7 +30,7 @@ Could it be a user story, an issue escalated by the Support team, a refactor opp
 
 👉 _It is the “why ?” of the pull request_
 
-### A single and unambiguous goal
+### 2. A single and unambiguous goal
 
 What are we achieving merging this pull request?
 
@@ -38,7 +38,7 @@ When the pull request goal cannot be easily described in one short sentence, it 
 
 👉 _It's the “what ?” of the pull request_
 
-### Details about implementation strategy
+### 3. Details about implementation strategy
 
 Documenting implementation in a pull request description can only be beneficial.
 
@@ -49,7 +49,7 @@ It will influence the reviewer's mindset and give him/her all the intangible inf
 
 👉 _It is the "how" of the pull request_
 
-### We want results!
+### 4. We want results!
 
 If possible, giving pointers on how to test or visualize the introduced changes will greatly ease the review process.
 
@@ -71,7 +71,7 @@ And some real life examples:
 
 {% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/pr_template_example_2.png" alt="Pull Request Template example 2" %}
 
-Every project can use a different pull request template. I find it always interesting to browse around some open-source project for inspiration.
+Every project can use a different pull request template. I always find it interesting to browse around some open-source projects for inspiration.
 When looking at [VueJS][vuejs_pr_template], [Atom][atom_pr_template], [ESLint][eslint_pr_template] or [Webpack][webpack_pr_template] templates, we can quickly see what matters the most for each team.
 
 > When I write a pull request description, I keep in mind that the person who is going to do the review does not know anything about the changes I implemented. I do it even when I know it's not the case, it helps me take a step back.
@@ -86,7 +86,7 @@ On top of having a solid description, here are some best practices when opening 
 
 The bigger the pull request, the more complex the review process is.
 
-When reviewing a pull request, the attention level of a reviewer will inherently decrease after about ten minutes. Leading to bugs hitting production while they could have easily been discovered during the code review.
+When reviewing a pull request, the attention level of a reviewer will inherently decrease after about ten minutes. This is leading to bugs hitting production while they could have easily been discovered during the code review.
 
 Even on big projects or feature, it is often easy to break up changes in several smaller pull requests.
 
@@ -101,7 +101,7 @@ It is a good habit to so the same before hitting the create button for a new pul
 Reviewers can notice obvious hints giving away that the author didn't proofread his/her pull request.
 Could it be a local file versioned unintentionally, or a comment intended to be removed before the pull request (ex: "To-do: extract logic into private method").
 
-Not the best way to start a review, and so much credibility lost for the author of the PR.
+Not proofreafing its own pull request is the quickest way to loose credibility.
 
 ### Commit messages... a story in itself
 
@@ -123,7 +123,7 @@ Ideally, we should open a first pull request dedicated to code linting. Or at le
 
 {% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/linting_in_pr_diff.png" alt="Linting in PR diff" caption="It is hard to spot the actual changes among all the code linting" %}
 
-## Why go to all that trouble?
+## Why go through all that trouble?
 
 The hidden goal here is to reduce average lead time between pull requests creation and completion. It will improve an overall codebase quality without impacting the team velocity.
 
@@ -170,7 +170,7 @@ A neutral question such as:
 
 > Did you take the time to test this method before opening this pull request?
 
-...will be perceived negatively when read.
+...could be perceived negatively when read.
 
 Similarly, sarcasm is very hard to spot when written.
 
@@ -180,7 +180,7 @@ Luckily, there is no shortage of emojis 😀😁😃😄😅😆😉😊😋😎
 
 It can seem obvious, but, the more explicit we are with feedback, the better it is.
 
-When the author of a pull request answer the reviewer feedback asking for some clarification, it often means that the feedback given wasn't good enough.
+When the author of a pull request answers the reviewer's feedback asking for some clarification, it often means that the feedback given wasn't good enough.
 
 Instead of writing
 
@@ -188,7 +188,7 @@ Instead of writing
 
 One could write
 
-> I noticed this pattern where you loop over an array, do some computing on each element, and save the result in another previously instanced array. For such logic, the `map` method of the `Enumerable` module can be used. You can find some good examples here: https://...
+> I noticed this pattern where you loop over an array, do some computing on each element, and save the result in another previously instanced array. For such instance, the `map` method of the `Enumerable` module can be used. You can find some good examples here: https://...
 
 ### One single problem, hundreds of solutions
 
@@ -196,21 +196,21 @@ As a reviewer, for a given problem, it is important to make the distinction betw
 
 There are almost always several possible paths to reach the same goal.
 
-Taking a step back could also let the reviewer discover new paths. The review is not one-sided.
+Taking a step back could also allow the reviewer to discover new paths. The review is not one-sided.
 
-### It's tool late to challenge architectural or design choices
+### It's too late to challenge architectural or design choices
 
 > Why don't we create the concept of "credit" in our codebase to deal with discounts?
 
 > Should we use Redis instead of PostgreSQL for this feature?
 
-While valid points, this kind of questions, challenging the whole implementation strategy of a new feature during a code review, are often a symptom of poor technical specifications or lack of communication.
+While these are valid points, this kind of questions, challenging the whole implementation strategy of a new feature during a code review, are often a symptom of poor technical specifications or lack of communication.
 
-Having dedicated instances with its team to come up with implementation strategies before writing a single line of code will avoid such frustrating situations.
+Having short meetings with one's team to come up with implementation strategies before writing a single line of code will avoid such frustrating situations.
 
 ### Highlighting best practices
 
-Code reviews feedback is not always negative. It is also a great way to give positive feedback to teammates or express gratitude when leaning something new when reading someone else code.
+Code reviews feedback is not always negative. It is also a great way to give positive feedback to teammates or express gratitude when leaning something new when reading someone else's code.
 
 > ❤️ the way you handled the corner case for users with temporary passwords, very clever :)
 
@@ -235,13 +235,13 @@ Best practice is to have a style guide already defined for and by the team.
 
 ### Contemplate peer code review
 
-There are cases where one does not really know how to begin a code review, or feel overwhelmed by the task ahead of him/her. In such cases, why don't go ask the pull request author to do the code review directly with him/her.
+There are cases where one does not really know how to begin a code review, or one feels overwhelmed by the task ahead. In such cases, why don't you ask the pull request author to do the code review directly with him/her.
 
-It is usually very efficient
+In my experience, it is usually very efficient
 
-### Response time to code review is important
+### Code reviews response time is important
 
-If a reviewer waits four days and three follow-ups to start reviewing a pull request, chances are he/she will be bypassed next time.
+If a reviewer waits for four days and three follow-ups to start reviewing a pull request, chances are he/she will be bypassed next time.
 
 Dedicating some time during the day for reviewing code is a must. It is not something a developer does on top of its current workload, it is work.
 
@@ -253,9 +253,9 @@ I like to build a strong and healthy code review culture in teams I work with an
 
 ### Don't let your ego get in the way
 
-It is most likely the hardest part of a code review. Personally, it took me some time. When I started to code professionally, to understand that code reviews are about code, not people.
+It is most likely the hardest part of a code review. Personally, it took me some time. When I started to code professionally, I needed to understand that code reviews are about code, not people.
 
-After realizing it, it was easier to be in the right mindset to reply to feedbacks given on my pull requests. Not needing to be on the defensive and instead welcoming it as a way to improve my code.
+After realizing that, it was easier to be in the right mindset to reply to feedbacks given on my pull requests. Not needing to be on the defensive and instead welcoming it as a way to improve my code.
 
 However, it doesn't mean that we have to accept 100% of a code review feedbacks. After all, we are all opinionated.
 
@@ -263,22 +263,22 @@ However, it doesn't mean that we have to accept 100% of a code review feedbacks.
 
 Quite often, good ideas are born during code reviews.
 
-When they are out of scope from the original pull request, a good habit is to take not and extract it in another ticket or an issue.
+When such ideas are out of scope from the original pull request, a good habit is to take them out for the pull requests and extract them in new tickets or issues.
 
 That way, it can be prioritized and addressed in a following pull request or at a later stage and do not impede the current pull request to hit production as soon as ready.
 
 ### Reply to all feedbacks
 
-If not, how will the reviewer know if the pull request author actually took into consideration its feedback?
+If not, how will the reviewer know if the pull request author actually took his/her feedback into consideration?
 
 {% include image.html url="/assets/image/posts/2019-06-07-code-review-harder-than-it-looks/github_emojis_reaction.png" alt="GitHub emoji reaction" caption="GitHub allows using emojis to quickly respond to feedback" %}
 
 ### Take it offline when needed
 
-When there is a lot of back and forth in a code review, lengthy messages, and no clear convergence point, a good idea is to discuss directly and verbally the subject with the reviewer.
+When there is a lot of back and forth in a code review, lengthy messages, and no clear convergence point, a good idea is to discuss the subject directly and face to face with the reviewer.
 I'm always pleasantly surprised at the efficiency of a short 15 minutes talk on a topic compared to hours of written exchanges.
 
-Giving and receiving relevant feedback in code reviews is not an innate ability. But with some practice it easily becomes a reflex.
+Giving and receiving relevant feedback in code reviews is not an innate ability. But with some practice it could easily become a reflex.
 
 _Note: this post was originally published in French on [LiveMentor's Tech team Medium][original_post]_
 
