@@ -13,7 +13,7 @@ I’m also giving pointers on how one can take them into account on a daily basi
 
 1. [Conway’s law](#conway-law): *Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.*
 
-2. [Metcafe’s law](#metcafe-law): *Every time you add a new user to a network, the number of connections increases proportionally to the square of the number of users*
+2. [Metcalfe’s law](#metcalfe-law): *Every time you add a new user to a network, the number of connections increases proportionally to the square of the number of users*
 
 3. [Galls’s law](#gall-law): *A complex system that works has evolved from a simple system that worked. A complex system built from scratch won’t work.*
 
@@ -57,7 +57,7 @@ It is called an “Inverse Conway Maneuver”.
 
 Domain Driven Design, identifying Bounded Contexts, can also be a useful tool to take Conway’s law into consideration when architecting a software.
 
-## 2. Metcalfe’s law {#metcafe-law}
+## 2. Metcalfe’s law {#metcalfe-law}
 
 > Every time you add a new user to a network, the number of connections increases proportionally to the square of the number of users
 
@@ -110,7 +110,7 @@ Software engineer time is expensive, the name of the game is to work on the righ
 
 → Regularly review and adjust timelines to ensure they are appropriate and not overly padded.
 
-→ Ditch software estimations.
+→ [Ditch software estimations](/blog/2025/06/20/software-estimates-suck).
 
 ## 5. Hofstadter's law {#hofstadter-law}
 
