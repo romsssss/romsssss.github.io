@@ -50,11 +50,9 @@ A “rich” medium allows:
 
 This maps *perfectly* to modern software teams.
 
-## The communication bandwidth pyramid (remote team edition)
-
 Not all communication channels are equal. Here’s a practical hierarchy, from richest to poorest:
 
-{% include image.html url="/assets/image/posts/2026-01-06-why-turning-your-camera-on-matters-in-remote-software-teams/communication-bandwith-pyramid.png" alt="Communication Bandwith Pyramid" %}
+{% include image.html url="/assets/image/posts/2026-01-06-why-turning-your-camera-on-matters-in-remote-software-teams/communication-bandwith-pyramid.png" alt="Communication Bandwith Pyramid" caption="The communication bandwidth pyramid (remote team edition)" %}
 
 The higher you go:
 
@@ -73,12 +71,7 @@ The lower you go:
 Turning cameras on isn’t about etiquette or surveillance.
 It’s about **bandwidth**.
 
-Enabling video:
-
-- Increases signal density
-- Restores non-verbal cues
-- Shortens feedback loops
-- Improves shared understanding
+Enabling video increases signal density, restores non-verbal cues, shortens feedback loops, and improves shared understanding.
 
 In pyramid terms:
 
@@ -113,12 +106,7 @@ Here’s an uncomfortable truth:
 > Most communication problems in software teams aren’t people problems —
 > they’re **bandwidth mismatches**.
 
-We routinely try to:
-
-- Debate architecture in Slack threads
-- Resolve disagreement via text
-- Express nuance with emojis
-- “Align” asynchronously
+We routinely try to debate architecture in Slack threads, resolve disagreement via text, express nuance with emojis, or “Align” asynchronously.
 
 Slack is **lossy compression for human communication**.
 
@@ -127,12 +115,7 @@ You wouldn’t review a complex PR through commit messages alone.
 
 Yet we constantly try to make trade-offs and reach alignment using the **lowest-bandwidth channel available**.
 
-Then we’re surprised when:
-
-- Decisions get reopened
-- People feel unheard
-- Trust erodes
-- Meetings multiply
+Then we’re surprised when decisions get reopened, people feel unheard, trust erodes, or meetings multiply.
 
 ## A simple rule of thumb
 
