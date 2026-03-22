@@ -684,7 +684,9 @@ footer {
 
     img {
       width: 36px;
+      max-width: 36px;
       height: auto;
+      flex-shrink: 0;
       border-radius: 2px;
     }
 
