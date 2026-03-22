@@ -1,13 +1,7 @@
 ---
 ---
 
-@use "variables" as *;
-@use "message";
-@use "spotify-embed";
-@use "syntax";
-@use "pagination";
-@use "map";
-@use "video";
+@import "variables";
 
 html {
   font-size: 100%;
@@ -724,3 +718,12 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "message";
+// @import "share-buttons";
+@import "spotify-embed";
+@import "syntax";
+@import "pagination";
+@import "map";
+// @import "search";
+@import "video";
+// @import "mermaid";
