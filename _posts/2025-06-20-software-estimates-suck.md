@@ -1,6 +1,9 @@
 ---
 title: "Software estimates suck"
 tags: [Engineering]
+related_books:
+  - accelerate
+  - learning_to_scale
 ---
 
 _TL:DR: Estimations waste time. Design well, derisk early, ship small, and invest in quality._

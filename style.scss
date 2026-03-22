@@ -1,7 +1,13 @@
 ---
 ---
 
-@import "variables";
+@use "variables" as *;
+@use "message";
+@use "spotify-embed";
+@use "syntax";
+@use "pagination";
+@use "map";
+@use "video";
 
 html {
   font-size: 100%;
@@ -646,6 +652,69 @@ footer {
   }
 }
 
+.related-books {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  .related-books-heading {
+    font-weight: bold;
+    color: $gray;
+  }
+
+  .related-books-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .related-book-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 1px solid $lightGray;
+    border-radius: 4px;
+    text-decoration: none;
+    color: $darkGray;
+    transition: border-color 250ms;
+
+    &:hover {
+      border-color: $gray;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: $darkGray;
+    }
+
+    img {
+      width: 36px;
+      height: auto;
+      border-radius: 2px;
+    }
+
+    .related-book-title {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+.related-posts-for-book {
+  margin-top: 30px;
+
+  .related-posts-for-book-heading {
+    font-weight: bold;
+    color: $gray;
+  }
+
+  ul {
+    margin-top: 8px;
+    padding-left: 20px;
+  }
+}
+
 .page-introduction {
   font-family: $code-font-family !important;
   margin-top: 20px;
@@ -655,12 +724,3 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "message";
-// @import "share-buttons";
-@import "spotify-embed";
-@import "syntax";
-@import "pagination";
-@import "map";
-// @import "search";
-@import "video";
-// @import "mermaid";

@@ -1,0 +1,16 @@
+{% if page.related_books and page.related_books.size > 0 %}
+<div class="related-books">
+  <span class="related-books-heading">Related Books:</span>
+  <div class="related-books-list">
+    {% for book_slug in page.related_books %}
+      {% assign book = site.books | where_exp: "b", "b.slug == book_slug" | first %}
+      {% if book %}
+      <a href="{{ book.url | relative_url }}" class="related-book-card">
+        <img src="/assets/image/books/{{ book.cover_image }}" alt="{{ book.title }} cover" />
+        <span class="related-book-title">{{ book.title }}</span>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

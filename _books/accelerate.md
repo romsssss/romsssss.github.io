@@ -4,6 +4,10 @@ title: Accelerate
 author: "Nicole Forsgren, Jez Humble, Gene Kim"
 description: "How to measure the performance of an engineering team, and what capabilities to invest in to drive higher performance. A great entry point to audit an existing team."
 cover_image: accelerate.jpeg
+related_posts:
+  - 2022-12-01-code-review-harder-than-it-looks
+  - 2024-07-26-guide-to-timeless-laws-engineering-excellence
+  - 2025-06-20-software-estimates-suck
 ---
 
 This book has been recommended to me when I was focusing on improving the quality of software shipped in an already swift.

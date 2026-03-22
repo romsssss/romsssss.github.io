@@ -1,6 +1,10 @@
 ---
 title: "Why turning your camera on matters in remote software teams"
 tags: [Collaboration]
+related_books:
+  - team_topologies
+  - managing_humans
+  - nine_lies_about_work
 ---
 
 Remote work is no longer an experiment in software development — it’s the default.

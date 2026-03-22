@@ -4,6 +4,8 @@ title: "Domain-Driven Design Distilled"
 author: "Vaughn Vernon"
 description: "A short but comprehensive resource about DDD. The perfect book to get familiarized with this approach. Also, a great read for people wanting to bring business closer to tech teams."
 cover_image: domain-driven-design-distilled.jpg
+related_posts:
+  - 2024-07-26-guide-to-timeless-laws-engineering-excellence
 ---
 
 Even though I never had the opportunity to strictly practice Domain Driven Design (DDD) in a professional context, I really enjoyed reading this book and I got much more out of it than I have expected.

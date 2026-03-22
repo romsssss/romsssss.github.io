@@ -4,6 +4,9 @@ title: Managing Humans
 author: Michael Lopp
 description: "Managing Humans is a witty, practical collection of essays on engineering leadership—dip in anywhere and learn something that actually works."
 cover_image: managing_humans.jpg
+related_posts:
+  - 2022-12-01-code-review-harder-than-it-looks
+  - 2026-01-06-why-turning-your-camera-on-matters-in-remote-software-teams
 ---
 
 ## A Dip-in Guide for Engineering Managers
