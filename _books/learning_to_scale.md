@@ -4,6 +4,9 @@ title: "Learning To Scale"
 author: "Regis Medina"
 description: "An exhaustive introduction to lean principles and practices. An important read for anyone looking to introducing lean principles to a software engineering team and is ready to start practicing."
 cover_image: learning_to_scale.jpg
+related_posts:
+  - 2024-07-26-guide-to-timeless-laws-engineering-excellence
+  - 2025-06-20-software-estimates-suck
 ---
 
 Regis Medina was one of the early pioneers of Agile methodologies. He helped many French companies to adopt a lean strategy and build fast-growing, highly adaptive scale-ups.

@@ -4,6 +4,9 @@ title: Team Topologies
 author: Matthew Skelton, Manual Pais
 description: "Team Topologies shows how to structure teams and interactions for fast, sustainable software delivery while keeping cognitive load manageable."
 cover_image: team_topologies.jpg
+related_posts:
+  - 2024-07-26-guide-to-timeless-laws-engineering-excellence
+  - 2026-01-06-why-turning-your-camera-on-matters-in-remote-software-teams
 ---
 
 ## Organize for Flow, Not Hierarchy

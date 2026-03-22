@@ -1,0 +1,15 @@
+{% if page.related_posts and page.related_posts.size > 0 %}
+<div class="related-posts-for-book">
+  <span class="related-posts-for-book-heading">Related Posts:</span>
+  <ul>
+    {% for post_slug in page.related_posts %}
+      {% for post in site.posts %}
+        {% assign post_file = post.path | split: "/" | last | replace: ".md", "" %}
+        {% if post_file == post_slug %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

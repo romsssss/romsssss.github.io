@@ -1,6 +1,9 @@
 ---
 title: "A good code review is harder than it looks"
 tags: [GitHub, "pull request"]
+related_books:
+  - accelerate
+  - managing_humans
 ---
 
 Opening easily to review pull requests, giving relevant feedback, or responding to feedback is hard.

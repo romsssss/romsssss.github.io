@@ -4,6 +4,8 @@ title: Clean Architecture
 author: Robert C. Martin
 description: "A pragmatic toolbox for building maintainable systems — as long as you don’t treat it like a religion."
 cover_image: clean_architecture.jpg
+related_posts:
+  - 2024-07-26-guide-to-timeless-laws-engineering-excellence
 ---
 
 Clean Architecture is less about diagrams and frameworks and more about how to think when structuring software. Robert C. Martin distills decades of experience into a clear message: protect your business logic, draw strong boundaries, and keep your system independent from tools, frameworks, and delivery details.

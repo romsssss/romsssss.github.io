@@ -4,6 +4,8 @@ title: Nine Lies About Work
 author: Ashley Goodall, Marcus Buckingham
 description: "Most management “best practices” are built on false assumptions about people, performance, and organizations—and they actually make work worse instead of better."
 cover_image: nine_lies_about_work.jpg
+related_posts:
+  - 2026-01-06-why-turning-your-camera-on-matters-in-remote-software-teams
 ---
 
 ## Proof That Corporate Bullshit Is Timeless

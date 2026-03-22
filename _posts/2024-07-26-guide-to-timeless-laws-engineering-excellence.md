@@ -1,6 +1,12 @@
 ---
 title: "A guide to the timeless laws of engineering excellence"
 tags: [Engineering]
+related_books:
+  - team_topologies
+  - domain-driven-design-distilled
+  - accelerate
+  - learning_to_scale
+  - clean_architecture
 ---
 
 While software engineering is one of the youngest branch of engineering (~60 years), it comes with its set of laws coined by engineers, scientists, economists, or psychologists, and based on facts gathered over time.

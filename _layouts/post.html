@@ -9,6 +9,8 @@ layout: default
     {{ content }}
   </div>
 
+  {% include related-books.html %}
+
   <div class="date">
     <i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;Date:<span style="color: #333333; font-weight: normal;">&nbsp;{{ page.date | date: "%B %e, %Y" }}</span>
   </div>
